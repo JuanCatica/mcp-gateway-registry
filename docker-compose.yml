@@ -192,6 +192,12 @@ services:
       KC_HOSTNAME_STRICT_HTTPS: 'false'
       KC_PROXY: edge  # Running behind nginx
       
+      # SSL/TLS configuration - disable SSL
+      KC_HTTPS_CERTIFICATE_FILE: ''
+      KC_HTTPS_CERTIFICATE_KEY_FILE: ''
+      KC_SPI_TRUSTSTORE_FILE_DISABLED: 'true'
+      KC_SPI_TRUSTSTORE_FILE_HOSTNAME_VERIFICATION_POLICY: 'ANY'
+      
       # Features
       KC_FEATURES: token-exchange,admin-api
       
